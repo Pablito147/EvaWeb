@@ -1,0 +1,44 @@
+.hero-container {
+  background: url('../../pictures/Hero-background.png') center center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container > h1 {
+  color: #fff;
+  font-size: 100px;
+  margin-top: 250px;
+  margin-left: 400px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.hero-container > p {
+  margin-top: 8px;
+  margin-left: 400px;
+  color: #fff;
+  font-size: 42px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+    
+}
+@media screen and (max-width: 1200px) {
+  .hero-container > p,
+  .hero-container > h1 {
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+    .hero-container > p {
+      font-size: 30px;
+    }
+    .hero-container > h1 {
+      font-size: 55px;
+    }
+}
+
